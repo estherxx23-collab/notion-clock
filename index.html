@@ -6,32 +6,33 @@
 
   <style>
     body {
-      margin: 0;
-      background: transparent;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      color: white;
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-    }
+  margin: 0;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+}
 
-    .widget {
-      text-align: center;
-      padding: 12px 20px;
-    }
+.widget {
+  text-align: center;
+  padding: 28px 48px; /* ← this makes the embed taller + wider */
+  min-width: 320px; /* ← forces Notion to give it space */
+}
 
-    .decor {
-      font-size: 13px;
-      opacity: 0.85;
-      white-space: nowrap;
-      margin: 4px 0;
-    }
+.decor {
+  font-size: 18px; /* ← decorative lines bigger */
+  opacity: 0.9;
+  white-space: nowrap;
+  margin: 10px 0;
+}
 
-    .time {
-      font-size: 22px;
-      margin: 6px 0;
-    }
+.time {
+  font-size: 36px; /* ← MAIN size control */
+  margin: 12px 0;
+}
   </style>
 </head>
 
