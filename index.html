@@ -6,39 +6,36 @@
 
   <style>
     html, body {
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      background: transparent;
-    }
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  overflow: hidden;
+}
 
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
-    }
+body {
+  color: white;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
 
-    .widget {
-      text-align: center;
-      padding: 20px 32px;
-      min-width: 280px;
-    }
+.widget {
+  display: inline-block;
+  text-align: center;
+  padding: 12px 20px;
+}
 
-    .decor {
-      font-size: 14px;
-      opacity: 0.9;
-      white-space: nowrap;
-      margin: 6px 0;
-    }
+.decor {
+  font-size: 14px;
+  opacity: 0.9;
+  white-space: nowrap;
+  margin: 4px 0;
+}
 
-    .time {
-      font-size: 28px;
-      font-weight: 500;
-      margin: 6px 0;
-      letter-spacing: 0.04em;
-    }
+.time {
+  font-size: 32px; /* THIS controls visual size */
+  font-weight: 500;
+  margin: 6px 0; /* tight to prevent scrollbar */
+  letter-spacing: 0.05em;
+}
   </style>
 </head>
 
