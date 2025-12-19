@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Notion Clock</title>
+
   <style>
     body {
       margin: 0;
@@ -11,21 +12,19 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
-      font-family: Inter, sans-serif;
+      color: white;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
     }
 
     .widget {
-      padding: 16px 32px;
-      border: 1.5px dotted rgba(255,255,255,0.6);
-      border-radius: 20px;
       text-align: center;
-      color: white;
+      padding: 12px 20px;
     }
 
     .decor {
-      font-size: 14px;
-      letter-spacing: 0.2em;
-      opacity: 0.9;
+      font-size: 13px;
+      opacity: 0.85;
+      white-space: nowrap;
       margin: 4px 0;
     }
 
@@ -35,11 +34,12 @@
     }
   </style>
 </head>
+
 <body>
   <div class="widget">
-    <div class="decor">✮ ⋆ ˚｡𖦹 ⋆｡°✩</div>
+    <div class="decor">⊹₊˚‧︵‿₊୨୧₊‿︵‧˚₊⊹</div>
     <div class="time" id="clock"></div>
-    <div class="decor">✮ ⋆ ˚｡𖦹 ⋆｡°✩</div>
+    <div class="decor">⊹₊˚‧︵‿₊୨୧₊‿︵‧˚₊⊹</div>
   </div>
 
   <script>
@@ -48,9 +48,10 @@
       document.getElementById("clock").textContent =
         now.toLocaleTimeString([], {
           hour: "numeric",
-          minute: "2-digit",
+          minute: "2-digit"
         });
     }
+
     updateClock();
     setInterval(updateClock, 1000);
   </script>
