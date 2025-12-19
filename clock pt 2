@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Notion Clock</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+    }
+
+    .widget {
+      text-align: center;
+      padding: 12px 20px;
+    }
+
+    .decor {
+      font-size: 13px;
+      opacity: 0.85;
+      white-space: nowrap;
+      margin: 4px 0;
+    }
+
+    .time {
+      font-size: 22px;
+      margin: 6px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="widget">
+    <div class="decor">⊹₊˚‧︵‿₊୨୧₊‿︵‧˚₊⊹</div>
+    <div class="time" id="clock"></div>
+    <div class="decor">⊹₊˚‧︵‿₊୨୧₊‿︵‧˚₊⊹</div>
+  </div>
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+      document.getElementById("clock").textContent =
+        now.toLocaleTimeString([], {
+          hour: "numeric",
+          minute: "2-digit"
+        });
+    }
+
+    updateClock();
+    setInterval(updateClock, 1000);
+  </script>
+</body>
+</html>
